@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { loading, setLoading, setUser, loginWithEmailPassword } = useContext(AuthContext);
+  const { setLoading, setUser, loginWithEmailPassword } = useContext(AuthContext);
   // console.log(useContext(AuthContext))
 
   const { register, handleSubmit, reset } = useForm();

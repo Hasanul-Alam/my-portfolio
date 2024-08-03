@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Resume = () => {
   const skills = [
@@ -62,7 +62,7 @@ const Resume = () => {
                 <p className="italic">2018-2024</p>
                 <p className="">Rajshahi Government City College</p>
                 <p className="my-3 leading-7">
-                  I hold a Bachelor's degree in Physics, where I gained a strong
+                  I hold a Bachelor degree in Physics, where I gained a strong
                   foundation in classical mechanics, electromagnetism, quantum
                   mechanics, and thermodynamics. My coursework emphasized
                   problem-solving, analytical skills, and experimental
@@ -148,7 +148,7 @@ const Resume = () => {
                 </h4>
                 <p className="my-2 font-semibold">Skillset:</p>
                 {skills.map((skill) => (
-                  <div className="inline-block px-4 py-2 bg-blue-400 rounded-full text-black mx-1 mt-2 ms-0">
+                  <div key={skill} className="inline-block px-4 py-2 bg-blue-400 rounded-full text-black mx-1 mt-2 ms-0">
                     <span className="text-center">{skill}</span>
                   </div>
                 ))}
