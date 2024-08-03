@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
   // All the menu items here to avoid DRY
@@ -28,6 +30,8 @@ const Navbar = () => {
   //   All the states here.
   const [isOpen, setIsOpen] = useState(false);
 
+  const {user} = useContext(AuthContext)
+
 
   return (
     <nav className="bg-black fixed w-full top-0 z-10">
@@ -41,14 +45,20 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.link}
-                  href="#"
+                  to={item.link}
                   className="text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
+              <Link
+                  to={user.email ? '/dashboard' : '/login'}
+                  className="text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  {user.email ? 'Dashboard' : 'Login'}
+                </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
