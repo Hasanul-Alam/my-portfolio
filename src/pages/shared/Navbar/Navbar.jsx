@@ -31,6 +31,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const {user} = useContext(AuthContext)
+  console.log(user)
 
 
   return (
@@ -54,10 +55,10 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                  to={user.email ? '/dashboard' : '/login'}
+                  to={user ? '/dashboard' : '/login'}
                   className="text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  {user.email ? 'Dashboard' : 'Login'}
+                  {user ? 'Dashboard' : 'Login'}
                 </Link>
             </div>
           </div>
