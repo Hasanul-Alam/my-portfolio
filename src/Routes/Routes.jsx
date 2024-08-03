@@ -1,14 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Login from "../pages/Login/Login";
-import NotFound from "../pages/NotFound/NotFound";
+// import NotFound from "../pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     exact: true,
     element: <App></App>,
-    errorElement: <NotFound/>,
+    // errorElement: <NotFound/>,
   },
   {
     path: "/home",
