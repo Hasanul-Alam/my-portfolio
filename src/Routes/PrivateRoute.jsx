@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../providers/AuthProvider';
 
-const PrivateRoute = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const PrivateRoute = ({children}) => {
+    const {user, loading} = useContext(AuthContext);
+    if(loading){
+        
+    }
 };
 
 export default PrivateRoute;

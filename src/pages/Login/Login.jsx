@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { loading, setUser, loginWithEmailPassword } = useContext(AuthContext);
+  const { loading, setLoading, setUser, loginWithEmailPassword } = useContext(AuthContext);
   // console.log(useContext(AuthContext))
 
   const { register, handleSubmit, reset } = useForm();
@@ -20,6 +20,7 @@ const Login = () => {
     loginWithEmailPassword(email, password)
       .then((result) => {
         setUser(result.user);
+        setLoading(false)
         reset();
       })
       .catch((error) => console.log(error.message));
