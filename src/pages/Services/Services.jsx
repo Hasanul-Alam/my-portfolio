@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("../../../public/fakedata.json")
+    fetch("fakedata.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
