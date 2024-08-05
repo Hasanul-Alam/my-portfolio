@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Hasanul Alam",
+    "email": "prince@gmail.com",
+    "image": "https://i.ibb.co/dgrJcm5/smiling-mechanic-with-arms-crossed-spanner.jpg",
+    "comments": "Excellent product! Great quality and fast shipping. Highly recommend to everyone. Will definitely buy again. Five stars!",
+    "rating": 2
+  },
+  {
+    "id": 2,
+    "name": "Nishat Afifa",
+    "email": "nishat@gmail.com",
+    "image": "https://i.ibb.co/dgrJcm5/smiling-mechanic-with-arms-crossed-spanner.jpg",
+    "comments": "Excellent product! Great quality and fast shipping. Highly recommend to everyone. Will definitely buy again. Five stars!",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Yeadul Islam",
+    "email": "yeadul@gmail.com",
+    "image": "https://i.ibb.co/dgrJcm5/smiling-mechanic-with-arms-crossed-spanner.jpg",
+    "comments": "Excellent product! Great quality and fast shipping. Highly recommend to everyone. Will definitely buy again. Five stars!",
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "name": "Akash Khan",
+    "email": "khan@gmail.com",
+    "image": "https://i.ibb.co/dgrJcm5/smiling-mechanic-with-arms-crossed-spanner.jpg",
+    "comments": "Excellent product! Great quality and fast shipping. Highly recommend to everyone. Will definitely buy again. Five stars!",
+    "rating": 4
+  }
+]
