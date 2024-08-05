@@ -1,4 +1,4 @@
-
+import SectionHeading from "../shared/SectionHeading/SectionHeading";
 
 const Resume = () => {
   const skills = [
@@ -21,13 +21,13 @@ const Resume = () => {
   return (
     <div className="bg-white py-10">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
-        <h2 className="font-bold text-3xl text-center text-black">
-          <span className="border-indigo-500 border-b-2">Resume</span>
-        </h2>
-        <p className="font-semibold text-gray-600 text-center text-lg mt-5">
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        {/* Section Heading */}
+        <SectionHeading
+          heading={"Resume"}
+          subHeading={
+            "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+          }
+        ></SectionHeading>
 
         {/* Main resume section */}
         <div className="grid grid-cols-2 gap-4 mt-16 text-black max-md:grid-cols-1">
@@ -148,7 +148,10 @@ const Resume = () => {
                 </h4>
                 <p className="my-2 font-semibold">Skillset:</p>
                 {skills.map((skill) => (
-                  <div key={skill} className="inline-block px-4 py-2 bg-blue-400 rounded-full text-black mx-1 mt-2 ms-0">
+                  <div
+                    key={skill}
+                    className="inline-block px-4 py-2 bg-blue-400 rounded-full text-black mx-1 mt-2 ms-0"
+                  >
                     <span className="text-center">{skill}</span>
                   </div>
                 ))}
@@ -166,7 +169,10 @@ const Resume = () => {
           </div>
         </div>
         <div className="w-full mx-auto text-center mt-10">
-          <a href="https://drive.google.com/file/d/1ziBx2WwJZ8ypEun5pNhwIy-Fk1CHaLHr/view?usp=drive_link" target="blank">
+          <a
+            href="https://drive.google.com/file/d/1ziBx2WwJZ8ypEun5pNhwIy-Fk1CHaLHr/view?usp=drive_link"
+            target="blank"
+          >
             <button className="btn btn-primary">View Full Resume</button>
           </a>
         </div>

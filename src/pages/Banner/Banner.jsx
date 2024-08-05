@@ -1,4 +1,3 @@
-import React from "react";
 import "./Banner.css";
 import { ReactTyped } from "react-typed";
 
@@ -8,9 +7,10 @@ const Banner = () => {
       <section className="banner-section mt-[4rem]">
         <div className="relative banner-image flex justify-center items-center">
           <img
-            src="https://i.ibb.co/dp87ccH/hero-img.jpg"
+            src="https://i.ibb.co/s2gd0Cf/Untitled-design3.png"
+            width={'100%'}
             alt="Hero Image"
-            className="opacity-40 object-cover w-full h-auto"
+            className="opacity-40 object-cover w-full h-screen max-md:h-[300px]"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">

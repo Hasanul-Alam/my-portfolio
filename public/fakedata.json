@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "single page design",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam.",
+      "logo": "<FaCode />"
+    },
+    {
+      "id": 2,
+      "title": "PSD to HTML",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+    },
+    {
+      "id": 3,
+      "title": "Figma to HTML",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+    },
+    {
+      "id": 4,
+      "title": "Single Page React Application",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+    },
+    {
+      "id": 5,
+      "title": "React Native for Mobile Apps",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+    },
+    {
+      "id": 5,
+      "title": "React Native for Mobile Apps",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+    }
+  ]

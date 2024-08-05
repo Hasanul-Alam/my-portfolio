@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h2 className="h-8 w-8 text-2xl text-white hover:cursor-pointer">Hasanul</h2>
+              <Link to='/' className="h-8 w-8 text-2xl text-white hover:cursor-pointer">Hasanul</Link>
             </div>
           </div>
           <div className="hidden md:block">
