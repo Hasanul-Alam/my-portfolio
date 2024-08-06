@@ -1,6 +1,8 @@
 import "./App.css";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Banner from "./pages/Banner/Banner";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./pages/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 import Services from "./pages/Services/Services";
@@ -18,6 +20,8 @@ function App() {
         <Services></Services>
         <Portfolio></Portfolio>
         <Testimonial></Testimonial>
+        <Contact></Contact>
+        <Footer></Footer>
       </div>
     </>
   );
