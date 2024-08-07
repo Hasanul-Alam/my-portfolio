@@ -69,6 +69,7 @@ const Contact = () => {
               required
             />
             <textarea
+              rows={5}
               className="textarea textarea-primary bg-white text-black w-full"
               placeholder="Message"
             ></textarea>

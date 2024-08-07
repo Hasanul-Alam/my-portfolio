@@ -30,9 +30,8 @@ const Navbar = () => {
   //   All the states here.
   const [isOpen, setIsOpen] = useState(false);
 
-  const {user} = useContext(AuthContext)
-  console.log(user)
-
+  const { user } = useContext(AuthContext);
+  console.log(user);
 
   return (
     <nav className="bg-black fixed w-full top-0 z-10">
@@ -40,26 +39,31 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link to='/' className="h-8 w-8 text-2xl text-white hover:cursor-pointer">Hasanul</Link>
+              <Link
+                to="/"
+                className="h-8 w-8 text-2xl text-white hover:cursor-pointer"
+              >
+                Hasanul
+              </Link>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
-                <Link
+                <a
                   key={item.link}
-                  to={item.link}
+                  href="#"
                   className="text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
               <Link
-                  to={user ? '/dashboard' : '/login'}
-                  className="text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {user ? 'Dashboard' : 'Login'}
-                </Link>
+                to={user ? "/dashboard" : "/login"}
+                className="text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                {user ? "Dashboard" : "Login"}
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -108,6 +112,12 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
+          <Link
+            to={user ? "/dashboard" : "/login"}
+            className="text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
+            {user ? "Dashboard" : "Login"}
+          </Link>
         </div>
       </div>
     </nav>
