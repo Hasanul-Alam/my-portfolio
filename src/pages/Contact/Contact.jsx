@@ -2,8 +2,25 @@ import SectionHeading from "../shared/SectionHeading/SectionHeading";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { FaRegEnvelope } from "react-icons/fa";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const { register, handleSubmit, reset } = useForm();
+  const handleSendMessage = (data) => {
+    axios.post('http://localhost:5000/message', data)
+    .then(res => {
+      if(res.data.insertedId){
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Your message have been sent succesfully."
+        });
+        reset();
+      }
+    })
+  };
   return (
     <div className="bg-white py-10">
       <section className="w-[70%] mx-auto max-md:w-[95%]">
@@ -47,15 +64,17 @@ const Contact = () => {
 
         {/* Message section of contact */}
         <div className="shadow-lg shadow-slate-400 px-10 py-7 rounded-lg max-md:px-3 max-md:shadow-none">
-          <form action="">
+          <form onSubmit={handleSubmit(handleSendMessage)} action="">
             <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
               <input
+                {...register("name")}
                 type="text"
                 placeholder="Your Name"
                 className="input input-bordered input-primary w-full bg-white text-black"
                 required
               />
               <input
+                {...register("email")}
                 type="email"
                 placeholder="Email"
                 className="input input-bordered input-primary w-full bg-white text-black"
@@ -63,18 +82,25 @@ const Contact = () => {
               />
             </div>
             <input
+              {...register("subject")}
               type="text"
               placeholder="Subject"
               className="input input-bordered input-primary w-full bg-white text-black my-5"
               required
             />
             <textarea
+              {...register("message")}
               rows={5}
               className="textarea textarea-primary bg-white text-black w-full"
               placeholder="Message"
             ></textarea>
             <div className="text-center mt-5">
-              <button className="btn bg-blue-600 border-0 hover:bg-blue-700 rounded-full text-white">Send Message</button>
+              <button
+                type="submit"
+                className="btn bg-blue-600 border-0 hover:bg-blue-700 rounded-full text-white"
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>
