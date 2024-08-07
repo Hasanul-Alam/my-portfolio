@@ -1,22 +1,22 @@
 import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 const Footer = () => {
   return (
     <div className="bg-blue-100 py-10">
       <div className="flex items-center justify-center">
-        <a href="#" target="blank" className="">
+        <a href="https://www.facebook.com/hasanul.alam.prince" target="blank" className="">
           <div className="text-xl text-black hover:text-white p-3 hover:bg-blue-500 rounded-full border border-blue-500">
             <FaFacebookF />
           </div>
         </a>
-        <a href="#" target="blank" className="mx-5">
+        <a href="https://github.com/Hasanul-Alam" target="blank" className="mx-5">
           <div className="text-xl text-black hover:text-white p-3 hover:bg-blue-500 rounded-full border border-blue-500">
-            <FaInstagram />
+            <FiGithub />
           </div>
         </a>
-        <a href="#" target="blank" className="">
+        <a href="https://www.linkedin.com/in/hasanul-alam/" target="blank" className="">
           <div className="text-xl text-black hover:text-white p-3 hover:bg-blue-500 rounded-full border border-blue-500">
             <FaLinkedinIn />
           </div>
