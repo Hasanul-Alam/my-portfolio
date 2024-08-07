@@ -64,7 +64,7 @@ const DashboardNavbar = () => {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 p-4 md:ml-64">
+      <div className="flex-1 p-4">
         <button
           className="md:hidden text-black focus:outline-none"
           onClick={toggleSidebar}
@@ -73,11 +73,6 @@ const DashboardNavbar = () => {
         </button>
         {/* Outlet */}
         <div className="mt-5">
-          <h1 className="text-3xl font-bold">Main Content</h1>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
           <Outlet></Outlet>
         </div>
       </div>
