@@ -41,7 +41,7 @@ const Messages = () => {
   return (
     <>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white text-black">
+        <table className="min-w-full bg-slate-300 text-black">
           <thead className="bg-gray-200 text-center">
             <tr>
               <th className="py-2 px-4 border">Name</th>

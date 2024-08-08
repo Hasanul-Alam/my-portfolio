@@ -8,12 +8,12 @@ const DashboardNavbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="flex">
+    <div className="flex bg-slate-100 text-black">
       {/* Sidebar */}
       <div
         className={`fixed inset-y-0 left-0 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:relative md:translate-x-0 transition-transform duration-200 ease-in-out bg-gray-800 text-white w-64 p-4 h-screen`}
+        } md:relative md:translate-x-0 transition-transform duration-200 ease-in-out bg-slate-100 text-black w-64 p-4 h-screen`}
       >
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-bold">Logo</h2>
@@ -26,37 +26,32 @@ const DashboardNavbar = () => {
         </div>
         <nav className="mt-4">
           <Link to="/"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-300"
           >
             Home
           </Link>
           <Link to="/dashboard/messages"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Messages
           </Link>
           <Link to="/dashboard/add-skill"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Add Skill
           </Link>
-          <Link to="/dashboard/add-resume-skill"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
-          >
-            Add Resume Skill
-          </Link>
           <Link to="/dashboard/add-service"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Add Service
           </Link>
           <Link to="/dashboard/add-portfolio"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Add Portfolio
           </Link>
           <Link to="/dashboard/update-contact"
-            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Update Contact
           </Link>
@@ -64,7 +59,7 @@ const DashboardNavbar = () => {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 p-4">
+      <div className="flex-1 p-4 bg-slate-100 overflow-x-scroll">
         <button
           className="md:hidden text-black focus:outline-none"
           onClick={toggleSidebar}

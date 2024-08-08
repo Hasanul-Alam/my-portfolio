@@ -1,23 +1,8 @@
+import useSkills from "../../hooks/useSkills";
 import SectionHeading from "../shared/SectionHeading/SectionHeading";
 
 const Resume = () => {
-  const skills = [
-    " HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT",
-    "NODE",
-    "MONGODB",
-    "EXPRESS",
-    "NEXT.JS",
-    "REACT-NATIVE",
-    "FIREBASE",
-    "BOOTSTRAP",
-    "TAILWIND",
-    "GIT",
-    "GITHUB",
-    "BITBUCKET",
-  ];
+  const [skills] = useSkills();
   return (
     <div className="bg-white py-10">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
@@ -149,10 +134,10 @@ const Resume = () => {
                 <p className="my-2 font-semibold">Skillset:</p>
                 {skills.map((skill) => (
                   <div
-                    key={skill}
+                    key={skill._id}
                     className="inline-block px-4 py-2 bg-blue-400 rounded-full text-black mx-1 mt-2 ms-0"
                   >
-                    <span className="text-center">{skill}</span>
+                    <span className="text-center uppercase">{skill.name}</span>
                   </div>
                 ))}
                 <h4 className="mt-3 font-semibold text-black">About Me: </h4>
