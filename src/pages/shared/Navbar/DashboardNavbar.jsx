@@ -16,7 +16,7 @@ const DashboardNavbar = () => {
         } md:relative md:translate-x-0 transition-transform duration-200 ease-in-out bg-slate-100 text-black w-64 p-4 h-screen`}
       >
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold">Logo</h2>
+          <Link to="/dashboard/messages"><h2 className="text-2xl font-bold">Admin {'(Hasanul)'}</h2></Link>
           <button
             className="md:hidden text-white focus:outline-none"
             onClick={toggleSidebar}

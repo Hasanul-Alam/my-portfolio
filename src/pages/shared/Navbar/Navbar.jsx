@@ -59,7 +59,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Link
-                to={user ? "/dashboard" : "/login"}
+                to={user ? "/dashboard/messages" : "/login"}
                 className="text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 {user ? "Dashboard" : "Login"}
@@ -113,7 +113,7 @@ const Navbar = () => {
             </a>
           ))}
           <Link
-            to={user ? "/dashboard" : "/login"}
+            to={user ? "/dashboard/messages" : "/login"}
             className="text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             {user ? "Dashboard" : "Login"}
