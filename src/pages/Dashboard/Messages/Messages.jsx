@@ -67,15 +67,15 @@ const Messages = () => {
                     {message.status === 'read' ? 'Seen' : 'Unseen'}
                   </p>
                 </td>
-                <td className="py-2 px-4 border">
+                <td className="py-2 px-4 border flex gap-2 justify-center items-center">
                   <Link to={`/dashboard/message-detail/${message._id}`}>
-                    <button className="inline-block bg-green-600 p-3 mx-2 rounded-lg">
+                    <button className="inline-block bg-green-600 p-3 rounded-lg">
                       <FaBookReader />
                     </button>
                   </Link>
                   <button
                     onClick={() => handleDelete(message._id)}
-                    className="inline-block bg-red-600 p-3 mx-2 rounded-lg"
+                    className="inline-block bg-red-600 p-3 rounded-lg"
                   >
                     <FaTrash />
                   </button>

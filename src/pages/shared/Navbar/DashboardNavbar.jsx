@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const DashboardNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {logout} = useContext(AuthContext);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="flex bg-slate-100 text-black">
+    <div className="flex bg-slate-100 text-black min-h-screen">
       {/* Sidebar */}
       <div
         className={`fixed inset-y-0 left-0 transform ${
@@ -65,6 +67,11 @@ const DashboardNavbar = () => {
           >
             Update Contact
           </Link>
+          <button onClick={logout} to="/dashboard/update-contact"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200 w-full text-left"
+          >
+            Logout
+          </button>
         </nav>
       </div>
 

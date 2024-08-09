@@ -12,6 +12,7 @@ import Skills from "../pages/Dashboard/Skills/Skills";
 import Services from "../pages/Dashboard/Services/Services";
 import MessageDetail from "../pages/Dashboard/MessageDetail/MessageDetail";
 import UpdateSkill from "../pages/Dashboard/UpdateSkill/UpdateSkill";
+import UpdateService from "../pages/Dashboard/UpdateService/UpdateService";
 
 export const router = createBrowserRouter([
   {
@@ -66,6 +67,11 @@ export const router = createBrowserRouter([
         path: "update-skill/:id",
         element: <UpdateSkill></UpdateSkill>,
         loader: ({params}) => fetch(`http://localhost:5000/update-skill/${params.id}`)
+      },
+      {
+        path: "update-service/:id",
+        element: <UpdateService></UpdateService>,
+        loader: ({params}) => fetch(`http://localhost:5000/update-service/${params.id}`)
       },
       {
         path: "message-detail/:id",
