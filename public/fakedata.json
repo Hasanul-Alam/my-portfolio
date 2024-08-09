@@ -1,33 +1,45 @@
 [
     {
-      "id": 1,
-      "title": "single page design",
+      "name": "single page design",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam.",
       "logo": "<FaCode />"
     },
     {
-      "id": 2,
-      "title": "PSD to HTML",
+      "name": "PSD to HTML",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
     },
     {
-      "id": 3,
-      "title": "Figma to HTML",
+      "name": "Figma to HTML",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
     },
     {
-      "id": 4,
-      "title": "Single Page React Application",
+      "name": "Single Page React Application",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
     },
     {
-      "id": 5,
-      "title": "React Native for Mobile Apps",
+      "name": "React Native for Mobile Apps",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
     },
     {
-      "id": 6,
-      "title": "React Native for Mobile Apps",
+      "name": "React Native for Mobile Apps",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
     }
   ]

@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("fakedata.json")
+    fetch("http://localhost:5000/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -24,7 +24,7 @@ const Services = () => {
         <div className="grid grid-cols-3 gap-4 text-center max-md:grid-cols-1">
           {services.map((service) => (
             <div
-              key={service.id}
+              key={service._id}
               className="px-10 py-14 text-start shadow-md shadow-slate-500 rounded-lg hover:cursor-pointer border-b-4 border-blue-600 duration-300 mt-3 hover:mt-0 hover:mb-3 group"
             >
               <div>
@@ -32,7 +32,7 @@ const Services = () => {
                   <FaCode />
                 </p>
                 <h2 className="capitalize text-2xl font-semibold my-3 text-black group-hover:text-blue-600">
-                  {service.title}
+                  {service.name}
                 </h2>
                 <p className="text-black">
                   {service.description}

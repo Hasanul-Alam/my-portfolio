@@ -5,10 +5,11 @@ import NotFound from "../pages/NotFound/NotFound";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Messages from "../pages/Dashboard/Messages/Messages";
 import AddSkill from "../pages/Dashboard/AddSkill/AddSkill";
-import AddResumeSkill from "../pages/Dashboard/AddResumeSkill/AddResumeSkill";
 import AddService from "../pages/Dashboard/AddService/AddService";
 import AddPortfolio from "../pages/Dashboard/AddPortfolio/AddPortfolio";
 import UpdateContact from "../pages/Dashboard/UpdateContact/UpdateContact";
+import Skills from "../pages/Dashboard/Skills/Skills";
+import Services from "../pages/Dashboard/Services/Services";
 
 export const router = createBrowserRouter([
   {
@@ -36,12 +37,16 @@ export const router = createBrowserRouter([
         element: <Messages></Messages>
       },
       {
+        path: "skills",
+        element: <Skills></Skills>
+      },
+      {
         path: "add-skill",
         element: <AddSkill></AddSkill>
       },
       {
-        path: "add-resume-skill",
-        element: <AddResumeSkill></AddResumeSkill>
+        path: "services",
+        element: <Services></Services>
       },
       {
         path: "add-service",

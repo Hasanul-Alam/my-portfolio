@@ -1,18 +1,14 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { FaBookReader } from "react-icons/fa";
-import { FaTrash } from "react-icons/fa";
+import useSkills from "../../../hooks/useSkills";
 import Swal from "sweetalert2";
-const Messages = () => {
-  const [messages, setMessages] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:5000/messages").then((res) => {
-      setMessages(res.data);
-    });
-  }, []);
+import axios from "axios";
+import { CiEdit } from "react-icons/ci";
+import { FaRegTrashCan } from "react-icons/fa6";
 
-  const handleSeeMoreButton = () => {
-    console.log("Show More");
+const Skills = () => {
+  const [skills] = useSkills();
+
+  const handleEdit = (id) => {
+    console.log(id);
   };
 
   const handleDelete = (id) => {
@@ -26,11 +22,11 @@ const Messages = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/messages/${id}`).then((res) => {
+        axios.delete(`http://localhost:5000/add-skill/${id}`).then((res) => {
           if (res.data.deletedCount > 0) {
             Swal.fire({
               title: "Deleted!",
-              text: "Your file has been deleted.",
+              text: "Your skill has been deleted.",
               icon: "success",
             });
           }
@@ -39,35 +35,35 @@ const Messages = () => {
     });
   };
   return (
-    <>
+    <div className="w-[90%] mx-auto">
       <div className="overflow-x-auto">
         <table className="min-w-full bg-slate-300 text-black">
           <thead className="bg-gray-200 text-center">
             <tr>
               <th className="py-2 px-4 border">Name</th>
-              <th className="py-2 px-4 border">Email</th>
-              <th className="py-2 px-4 border">Message</th>
+              <th className="py-2 px-4 border">Progress</th>
+              <th className="py-2 px-4 border">Project Link</th>
               <th className="py-2 px-4 border">Action</th>
             </tr>
           </thead>
           <tbody className="text-center">
-            {messages.map((message) => (
-              <tr key={message._id}>
-                <td className="py-2 px-4 border">{message.name}</td>
-                <td className="py-2 px-4 border">{message.email}</td>
-                <td className="py-2 px-4 border">{message.message.slice(0,30)}...</td>
+            {skills.map((skill) => (
+              <tr key={skill._id}>
+                <td className="py-2 px-4 border">{skill.name}</td>
+                <td className="py-2 px-4 border">{skill.progress}%</td>
+                <td className="py-2 px-4 border">{skill.link}</td>
                 <td className="py-2 px-4 border">
                   <button
-                    onClick={handleSeeMoreButton}
+                    onClick={() => handleEdit(skill._id)}
                     className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
                   >
-                    <FaBookReader />
+                    <CiEdit />
                   </button>
                   <button
-                    onClick={() => handleDelete(message._id)}
+                    onClick={() => handleDelete(skill._id)}
                     className="inline-block bg-red-600 p-3 mx-2 rounded-lg"
                   >
-                    <FaTrash />
+                    <FaRegTrashCan />
                   </button>
                 </td>
               </tr>
@@ -76,8 +72,8 @@ const Messages = () => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Messages;
+export default Skills;

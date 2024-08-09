@@ -35,10 +35,20 @@ const DashboardNavbar = () => {
           >
             Messages
           </Link>
+          <Link to="/dashboard/skills"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
+          >
+            Skills
+          </Link>
           <Link to="/dashboard/add-skill"
             className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
           >
             Add Skill
+          </Link>
+          <Link to="/dashboard/services"
+            className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
+          >
+            Services
           </Link>
           <Link to="/dashboard/add-service"
             className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200"
