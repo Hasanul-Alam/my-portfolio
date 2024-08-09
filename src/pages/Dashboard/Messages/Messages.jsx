@@ -54,7 +54,7 @@ const Messages = () => {
                 <td className="py-2 px-4 border">{message.name}</td>
                 <td className="py-2 px-4 border">{message.email}</td>
                 <td className="py-2 px-4 border">
-                  {message.message.slice(0, 30)}...
+                  {message.message.slice(0, 30)}{message.message.length > 30 ?'...' : ''}
                 </td>
                 <td className="py-2 px-4 border text-center">
                   <p
@@ -64,7 +64,7 @@ const Messages = () => {
                         : "bg-yellow-300"
                     }`}
                   >
-                    {message.status}
+                    {message.status === 'read' ? 'Seen' : 'Unseen'}
                   </p>
                 </td>
                 <td className="py-2 px-4 border">

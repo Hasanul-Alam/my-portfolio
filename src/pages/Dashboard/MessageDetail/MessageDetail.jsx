@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -53,7 +52,7 @@ const MessageDetail = () => {
           </div>
         </div>
         <div className="flex justify-center mt-5">
-          <button onClick={()=>handleReadingStatus(message._id)} className="btn btn-primary capitalize">I have read it</button>
+          <button onClick={()=>handleReadingStatus(_id)} className="btn btn-primary capitalize">I have read it</button>
         </div>
       </div>
     </div>
