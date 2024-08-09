@@ -44,6 +44,7 @@ const Messages = () => {
               <th className="py-2 px-4 border">Name</th>
               <th className="py-2 px-4 border">Email</th>
               <th className="py-2 px-4 border">Message</th>
+              <th className="py-2 px-4 border">Status</th>
               <th className="py-2 px-4 border">Action</th>
             </tr>
           </thead>
@@ -55,11 +56,20 @@ const Messages = () => {
                 <td className="py-2 px-4 border">
                   {message.message.slice(0, 30)}...
                 </td>
+                <td className="py-2 px-4 border text-center">
+                  <p
+                    className={`p-1 rounded-full text-xs w-[60%] mx-auto ${
+                      message.status === "read"
+                        ? "bg-green-300"
+                        : "bg-yellow-300"
+                    }`}
+                  >
+                    {message.status}
+                  </p>
+                </td>
                 <td className="py-2 px-4 border">
                   <Link to={`/dashboard/message-detail/${message._id}`}>
-                    <button
-                      className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
-                    >
+                    <button className="inline-block bg-green-600 p-3 mx-2 rounded-lg">
                       <FaBookReader />
                     </button>
                   </Link>

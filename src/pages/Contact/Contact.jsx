@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
   const handleSendMessage = (data) => {
-    axios.post('http://localhost:5000/message', data)
+    axios.post('http://localhost:5000/message', {...data, "status":"not read"})
     .then(res => {
       if(res.data.insertedId){
         Swal.fire({

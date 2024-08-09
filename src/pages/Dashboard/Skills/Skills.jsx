@@ -3,13 +3,10 @@ import Swal from "sweetalert2";
 import axios from "axios";
 import { CiEdit } from "react-icons/ci";
 import { FaRegTrashCan } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   const [skills] = useSkills();
-
-  const handleEdit = (id) => {
-    console.log(id);
-  };
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -51,14 +48,15 @@ const Skills = () => {
               <tr key={skill._id}>
                 <td className="py-2 px-4 border">{skill.name}</td>
                 <td className="py-2 px-4 border">{skill.progress}%</td>
-                <td className="py-2 px-4 border">{skill.link}</td>
+                <td className="py-2 px-4 border">{skill.link.slice(0, 30)}...</td>
                 <td className="py-2 px-4 border">
-                  <button
-                    onClick={() => handleEdit(skill._id)}
-                    className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
-                  >
-                    <CiEdit />
-                  </button>
+                  <Link to={`/dashboard/update-skill/${skill._id}`}>
+                    <button
+                      className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
+                    >
+                      <CiEdit />
+                    </button>
+                  </Link>
                   <button
                     onClick={() => handleDelete(skill._id)}
                     className="inline-block bg-red-600 p-3 mx-2 rounded-lg"
@@ -66,6 +64,7 @@ const Skills = () => {
                     <FaRegTrashCan />
                   </button>
                 </td>
+                {/* {console.log(skill.link)} */}
               </tr>
             ))}
             {/* Add more rows as needed */}
