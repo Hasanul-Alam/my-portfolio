@@ -10,6 +10,7 @@ import AddPortfolio from "../pages/Dashboard/AddPortfolio/AddPortfolio";
 import UpdateContact from "../pages/Dashboard/UpdateContact/UpdateContact";
 import Skills from "../pages/Dashboard/Skills/Skills";
 import Services from "../pages/Dashboard/Services/Services";
+import MessageDetail from "../pages/Dashboard/MessageDetail/MessageDetail";
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +60,11 @@ export const router = createBrowserRouter([
       {
         path: "update-contact",
         element: <UpdateContact></UpdateContact>
+      },
+      {
+        path: "message-detail/:id",
+        element: <MessageDetail></MessageDetail>,
+        loader: ({params}) => fetch(`http://localhost:5000/message-detail/${params.id}`)
       },
     ]
   },

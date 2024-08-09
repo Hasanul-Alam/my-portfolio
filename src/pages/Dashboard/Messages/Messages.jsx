@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FaBookReader } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Messages = () => {
   const [messages, setMessages] = useState([]);
@@ -10,10 +11,6 @@ const Messages = () => {
       setMessages(res.data);
     });
   }, []);
-
-  const handleSeeMoreButton = () => {
-    console.log("Show More");
-  };
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -55,14 +52,17 @@ const Messages = () => {
               <tr key={message._id}>
                 <td className="py-2 px-4 border">{message.name}</td>
                 <td className="py-2 px-4 border">{message.email}</td>
-                <td className="py-2 px-4 border">{message.message.slice(0,30)}...</td>
                 <td className="py-2 px-4 border">
-                  <button
-                    onClick={handleSeeMoreButton}
-                    className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
-                  >
-                    <FaBookReader />
-                  </button>
+                  {message.message.slice(0, 30)}...
+                </td>
+                <td className="py-2 px-4 border">
+                  <Link to={`/dashboard/message-detail/${message._id}`}>
+                    <button
+                      className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
+                    >
+                      <FaBookReader />
+                    </button>
+                  </Link>
                   <button
                     onClick={() => handleDelete(message._id)}
                     className="inline-block bg-red-600 p-3 mx-2 rounded-lg"
