@@ -1,14 +1,20 @@
 import { useContext, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const DashboardNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const {logout} = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  const signOut = () => {
+    logout();
+    navigate('/home')
+  }
   return (
     <div className="flex bg-slate-100 text-black min-h-screen">
       {/* Sidebar */}
@@ -67,7 +73,7 @@ const DashboardNavbar = () => {
           >
             Update Contact
           </Link>
-          <button onClick={logout} to="/dashboard/update-contact"
+          <button onClick={signOut} to="/dashboard/update-contact"
             className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-200 w-full text-left"
           >
             Logout

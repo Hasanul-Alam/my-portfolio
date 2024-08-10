@@ -1,44 +1,56 @@
 [
     {
         "name":"Red Onion Restaurent",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"5 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/L1ZK1ns/Screenshot-2024-08-05-210359.png"
     },
     {
         "name":"The Dragon News",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"2 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/PYd8JPw/Screenshot-2024-08-05-205905.png"
     },
     {
         "name":"Genius Car Mechanics",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"2 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/wgK9WBQ/Screenshot-2024-08-05-205454.png"
     },
     {
         "name":"Bistro Boss Restaurent",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"10 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/zP3YZNM/Screenshot-2024-08-05-202352.png"
     },
     {
         "name":"Furnico ",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"10 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/WDmnPGX/Screenshot-1-2024-07-06-070137.png"
     },
     {
         "name":"The dragon news",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non corporis sequi ad nulla odio, esse nobis alias architecto molestiae, in necessitatibus impedit nam fugiat, quibusdam voluptatem pariatur dolores? Molestias?",
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis adipisci ut pariatur id corporis aspernatur obcaecati nulla deleniti architecto! Blanditiis, voluptates laudantium saepe cupiditate libero dignissimos aliquid ad dolore rerum incidunt optio voluptatum est tempore dolores minus placeat quibusdam voluptatem. Quidem dolorum voluptatum debitis quia velit beatae numquam quo?",
+        "technology":["react", "mongodb", "node", "express"],
         "duration":"2 days",
         "link":"",
-        "about":"",
         "img":"https://i.ibb.co/PYd8JPw/Screenshot-2024-08-05-205905.png"
     }
 ]

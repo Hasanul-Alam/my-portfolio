@@ -13,17 +13,28 @@ import Services from "../pages/Dashboard/Services/Services";
 import MessageDetail from "../pages/Dashboard/MessageDetail/MessageDetail";
 import UpdateSkill from "../pages/Dashboard/UpdateSkill/UpdateSkill";
 import UpdateService from "../pages/Dashboard/UpdateService/UpdateService";
+import PrivateRoute from "./PrivateRoute";
+import PortfolioDetail from "../pages/PortfolioDetail/PortfolioDetail";
+import Home from "../pages/Home/Home";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     exact: true,
     element: <App></App>,
-    errorElement: <NotFound/>,
-  },
-  {
-    path: "/home",
-    element: <App></App>,
+    errorElement: <NotFound />,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "portfolio-detail/:id",
+        element: <PortfolioDetail></PortfolioDetail>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/portfolio-detail/${params.id}`),
+      }
+    ],
   },
   {
     path: "/login",
@@ -32,52 +43,57 @@ export const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: (
-      <Dashboard></Dashboard>
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
     ),
-    children:[
+    children: [
       {
         path: "messages",
-        element: <Messages></Messages>
+        element: <Messages></Messages>,
       },
       {
         path: "skills",
-        element: <Skills></Skills>
+        element: <Skills></Skills>,
       },
       {
         path: "add-skill",
-        element: <AddSkill></AddSkill>
+        element: <AddSkill></AddSkill>,
       },
       {
         path: "services",
-        element: <Services></Services>
+        element: <Services></Services>,
       },
       {
         path: "add-service",
-        element: <AddService></AddService>
+        element: <AddService></AddService>,
       },
       {
         path: "add-portfolio",
-        element: <AddPortfolio></AddPortfolio>
+        element: <AddPortfolio></AddPortfolio>,
       },
       {
         path: "update-contact",
-        element: <UpdateContact></UpdateContact>
+        element: <UpdateContact></UpdateContact>,
       },
       {
         path: "update-skill/:id",
         element: <UpdateSkill></UpdateSkill>,
-        loader: ({params}) => fetch(`http://localhost:5000/update-skill/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/update-skill/${params.id}`),
       },
       {
         path: "update-service/:id",
         element: <UpdateService></UpdateService>,
-        loader: ({params}) => fetch(`http://localhost:5000/update-service/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/update-service/${params.id}`),
       },
       {
         path: "message-detail/:id",
         element: <MessageDetail></MessageDetail>,
-        loader: ({params}) => fetch(`http://localhost:5000/message-detail/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/message-detail/${params.id}`),
       },
-    ]
+    ],
   },
 ]);

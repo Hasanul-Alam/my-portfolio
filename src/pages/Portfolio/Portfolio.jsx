@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionHeading from "../shared/SectionHeading/SectionHeading";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
@@ -21,7 +22,8 @@ const Portfolio = () => {
         ></SectionHeading>
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4 text-center my-10">
           {portfolio.map((item) => (
-            <div key={item._id} className=" my-5 max-md:my-3 card bg-base-100 object-fill shadow-lg shadow-slate-500 duration-300 mt-3 hover:mt-0 hover:mb-3 bg-white hover:cursor-pointer">
+            <Link key={item._id} to={`/portfolio-detail/${item._id}`}>
+              <div className=" my-5 max-md:my-3 card bg-base-100 object-fill shadow-lg shadow-slate-500 duration-300 mt-3 hover:mt-0 hover:mb-3 bg-white">
               <figure>
                 <img
                   className="rounded-2xl"
@@ -30,6 +32,7 @@ const Portfolio = () => {
                 />
               </figure>
             </div>
+            </Link>
           ))}
         </div>
       </section>

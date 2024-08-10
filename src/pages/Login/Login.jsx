@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { setLoading, setUser, loginWithEmailPassword } = useContext(AuthContext);
+  const navigate = useNavigate();
   // console.log(useContext(AuthContext))
 
   const { register, handleSubmit, reset } = useForm();
@@ -20,7 +22,8 @@ const Login = () => {
     loginWithEmailPassword(email, password)
       .then((result) => {
         setUser(result.user);
-        setLoading(false)
+        setLoading(false);
+        navigate('/dashboard/messages');
         reset();
       })
       .catch((error) => console.log(error.message));
