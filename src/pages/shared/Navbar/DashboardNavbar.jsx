@@ -16,7 +16,7 @@ const DashboardNavbar = () => {
     navigate('/home')
   }
   return (
-    <div className="flex bg-slate-100 text-black min-h-screen">
+    <div className="flex bg-slate-100 text-black min-h-screen z-10">
       {/* Sidebar */}
       <div
         className={`fixed inset-y-0 left-0 transform ${
