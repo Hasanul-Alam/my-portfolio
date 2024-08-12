@@ -7,6 +7,16 @@ const AddPortfolio = () => {
 
   const handleAddPortfolio = (data) => {
     const imageFile = { image: data.image[0] };
+    // console.log(data)
+
+    // Putting all the technologies in an array
+    const technologies = data.technology;
+    const technologyArray = technologies.split(",");
+
+    // Putting all the features in an array
+    const features = data.features;
+    const featuresArray = features.split(",");
+
     axios
       .post(
         "https://api.imgbb.com/1/upload?key=a034eb9194a3961792dc743224e30bd2",
@@ -21,11 +31,13 @@ const AddPortfolio = () => {
         const imageLink = res.data.data.display_url;
         const portfolioData = {
           name: data.name,
-          duration: data.duration,
-          date: data.date,
-          link: data.link,
-          about: data.about,
-          image: imageLink,
+          description: data.description,
+          details: data.details,
+          liveLink: data.liveLink,
+          sourceLink: data.sourceLink,
+          technology: technologyArray,
+          features: featuresArray,
+          img: imageLink,
         };
         const response = await axios.post(
           `http://localhost:5000/add-portfolio`,
@@ -36,7 +48,7 @@ const AddPortfolio = () => {
           Swal.fire({
             title: "Added!",
             text: "Your portfolio has been added successfully.",
-            icon: "success"
+            icon: "success",
           });
         }
       });
@@ -67,16 +79,16 @@ const AddPortfolio = () => {
             <div className="w-full">
               <label
                 className="block text-gray-700 font-semibold mb-2"
-                htmlFor="duration"
+                htmlFor="description"
               >
-                Duration
+                Description
               </label>
               <input
-                {...register("duration")}
+                {...register("description")}
                 type="text"
-                id="duration"
+                id="description"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
-                placeholder="Enter Project Duration"
+                placeholder="A line that define your project"
               />
             </div>
           </div>
@@ -84,58 +96,87 @@ const AddPortfolio = () => {
             <div className="w-full">
               <label
                 className="block text-gray-700 font-semibold mb-2"
-                htmlFor=" date"
+                htmlFor="liveLink"
               >
-                Date
+                Live Site Link
               </label>
               <input
-                {...register(" date")}
-                type="date"
-                id=" date"
+                {...register("liveLink")}
+                type="liveLink"
+                id=" liveLink"
                 className="text-black w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 bg-slate-300"
-                placeholder="When you had done this project?"
+                placeholder="Enter your live site link"
               />
             </div>
             <div className="w-full">
               <label
                 className="block text-gray-700 font-semibold mb-2"
-                htmlFor="link"
+                htmlFor="sourceLink"
               >
-                Link
+                Source Link
               </label>
               <input
-                {...register("link")}
+                {...register("sourceLink")}
                 type="text"
-                id="link"
+                id="sourceLink"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
-                placeholder="Enter project link?"
+                placeholder="Enter Source link?"
               />
             </div>
           </div>
-
           <div>
             <label
               className="block text-gray-700 font-semibold mb-2"
-              htmlFor="message"
+              htmlFor="technologies"
             >
-              About
+              Technologies
             </label>
             <textarea
-              {...register("about")}
-              id="about"
+              {...register("technology")}
+              id="technologies"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
+              rows="2"
+              placeholder="Write which technologies you have used."
+            ></textarea>
+          </div>
+          <div>
+            <label
+              className="block text-gray-700 font-semibold mb-2"
+              htmlFor="features"
+            >
+              Features
+            </label>
+            <textarea
+              {...register("features")}
+              id="features"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
+              rows="2"
+              placeholder="Write about the features of this project."
+            ></textarea>
+          </div>
+          <div>
+            <label
+              className="block text-gray-700 font-semibold mb-2"
+              htmlFor="details"
+            >
+              Description
+            </label>
+            <textarea
+              {...register("details")}
+              id="details"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
               rows="4"
-              placeholder="Write about this project."
+              placeholder="Write details this project."
             ></textarea>
           </div>
           <div>
             <input
               {...register("image")}
               type="file"
-              id="about"
+              id="description"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2   bg-slate-300 text-black"
               rows="4"
-              placeholder="Write about this project."
+              placeholder="Write description this project."
             ></input>
           </div>
 
