@@ -2,15 +2,23 @@ import { useState, useEffect } from "react";
 import SectionHeading from "../shared/SectionHeading/SectionHeading";
 import { FaCode } from "react-icons/fa";
 
+// Sliding Library.
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Services = () => {
   const [services, setServices] = useState([]);
+
   useEffect(() => {
+    // Data fetching
     fetch("http://localhost:5000/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10" id="services">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
         {/* Section Heading */}
         <SectionHeading
@@ -21,7 +29,11 @@ const Services = () => {
         ></SectionHeading>
 
         {/* Services Cards */}
-        <div className="grid grid-cols-3 gap-4 text-center max-md:grid-cols-1">
+        <div
+          className="grid grid-cols-3 gap-4 text-center max-md:grid-cols-1"
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+        >
           {services.map((service) => (
             <div
               key={service._id}
@@ -34,9 +46,7 @@ const Services = () => {
                 <h2 className="capitalize text-2xl font-semibold my-3 text-black group-hover:text-blue-600">
                   {service.name}
                 </h2>
-                <p className="text-black">
-                  {service.description}
-                </p>
+                <p className="text-black">{service.description}</p>
               </div>
             </div>
           ))}

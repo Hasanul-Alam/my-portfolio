@@ -18,7 +18,7 @@ const UpdateContact = () => {
   return (
     <>
       <div className="min-h-screen flex items-center justify-center">
-        <div className="bg-white shadow-xl rounded-lg p-8 w-[60%]">
+        <div className="bg-white shadow-xl rounded-lg p-8 w-[60%] max-md:w-[95%] max-md:p-0 max-md:shadow-none max-md:bg-transparent">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
             Update Contact
           </h2>
@@ -26,7 +26,7 @@ const UpdateContact = () => {
             onSubmit={handleSubmit(handleUpdateContact)}
             className="space-y-6"
           >
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-md:block">
               <div className="w-full">
                 <label
                   className="block text-gray-700 font-semibold mb-2"
@@ -42,7 +42,7 @@ const UpdateContact = () => {
                   placeholder="Enter your address"
                 />
               </div>
-              <div className="w-full">
+              <div className="w-full max-md:my-7">
                 <label
                   className="block text-gray-700 font-semibold mb-2"
                   htmlFor="phone"

@@ -22,7 +22,7 @@ const Contact = () => {
     })
   };
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10" id="contact">
       <section className="w-[70%] mx-auto max-md:w-[95%]">
         {/* Section Heading */}
         <SectionHeading

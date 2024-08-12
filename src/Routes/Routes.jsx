@@ -25,16 +25,17 @@ export const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home></Home>,
       },
-      {
-        path: "portfolio-detail/:id",
-        element: <PortfolioDetail></PortfolioDetail>,
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/portfolio-detail/${params.id}`),
-      }
+      
     ],
+  },
+  {
+    path: "portfolio-detail/:id",
+    element: <PortfolioDetail></PortfolioDetail>,
+    loader: ({ params }) =>
+      fetch(`http://localhost:5000/portfolio-detail/${params.id}`),
   },
   {
     path: "/login",

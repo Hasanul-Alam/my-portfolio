@@ -1,13 +1,13 @@
-import { Outlet } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home/Home";
 import Navbar from "./pages/shared/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <div className="">
+      <div className="slide-down">
         <Navbar></Navbar>
-        <Outlet></Outlet>
+        <Home></Home>
       </div>
     </>
   );

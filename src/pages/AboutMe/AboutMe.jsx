@@ -1,8 +1,8 @@
-import React from "react";
+
 
 const AboutMe = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10" id="about">
       <section className="w-[75%] mx-auto shadow-2xl p-10 max-md:shadow-none max-md:p-0 max-md:w-[90%]">
         <div className="grid grid-cols-2 gap-4 bg-white text-black max-md:grid-cols-1 gap-0">
           <div>

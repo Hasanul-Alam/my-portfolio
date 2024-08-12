@@ -25,7 +25,7 @@ const UpdateService = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="bg-white shadow-xl rounded-lg p-8 w-[60%]">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            Add Portfolio Project
+            Update Service
           </h2>
           <form onSubmit={handleSubmit(handleUpdate)} className="space-y-6">
             <div className="flex gap-4">

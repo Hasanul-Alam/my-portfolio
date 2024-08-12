@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-blue-100 py-10">
+    <div className="bg-blue-100 py-10" id="footer">
       <div className="flex items-center justify-center">
         <a href="https://www.facebook.com/hasanul.alam.prince" target="blank" className="">
           <div className="text-xl text-black hover:text-white p-3 hover:bg-blue-500 rounded-full border border-blue-500">

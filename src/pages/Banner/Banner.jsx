@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 const Banner = () => {
   return (
     <>
-      <section className="banner-section mt-[4rem]">
+      <section className="banner-section mt-[4rem]" id="home">
         <div className="relative banner-image flex justify-center items-center">
           <img
             src="https://i.ibb.co/s2gd0Cf/Untitled-design3.png"

@@ -1,10 +1,15 @@
 import useSkills from "../../hooks/useSkills";
 import SectionHeading from "../shared/SectionHeading/SectionHeading";
+// Sliding Library.
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Resume = () => {
   const [skills] = useSkills();
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10" id="resume">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
         {/* Section Heading */}
         <SectionHeading
@@ -16,7 +21,7 @@ const Resume = () => {
 
         {/* Main resume section */}
         <div className="grid grid-cols-2 gap-4 mt-16 text-black max-md:grid-cols-1">
-          <div>
+          <div data-aos="fade-right" data-aos-anchor-placement="top-center">
             {/* Summary */}
             <h3 className="text-2xl font-semibold">Summary</h3>
             <div className="border-indigo-600 border-l-4 max-md:border-0 text-gray-600 pb-1">
@@ -73,7 +78,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-anchor-placement="top-center">
             <h3 className="text-2xl font-semibold">Projects & Portfolios</h3>
             <div className="border-indigo-600 border-l-4 max-md:border-0 pb-3 text-gray-600">
               <div className="ps-3 mt-3 leading-7">

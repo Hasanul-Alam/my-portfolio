@@ -14,7 +14,7 @@ const Testimonial = () => {
       .then((data) => setReviews(data));
   }, []);
   return (
-    <div className="py-10 bg-blue-100">
+    <div className="py-10 bg-blue-100" id="testimonial">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
         <Swiper
           navigation={true}
