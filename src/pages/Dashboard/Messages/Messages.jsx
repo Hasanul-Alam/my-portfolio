@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const Messages = () => {
   const [messages, setMessages] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/messages").then((res) => {
+    axios.get("https://portfolio-server-ah8e.onrender.com/messages").then((res) => {
       setMessages(res.data);
     });
   }, []);
@@ -23,7 +23,7 @@ const Messages = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/messages/${id}`).then((res) => {
+        axios.delete(`https://portfolio-server-ah8e.onrender.com/messages/${id}`).then((res) => {
           if (res.data.deletedCount > 0) {
             Swal.fire({
               title: "Deleted!",

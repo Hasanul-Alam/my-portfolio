@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
     path: "portfolio-detail/:id",
     element: <PortfolioDetail></PortfolioDetail>,
     loader: ({ params }) =>
-      fetch(`http://localhost:5000/portfolio-detail/${params.id}`),
+      fetch(`https://portfolio-server-ah8e.onrender.com/portfolio-detail/${params.id}`),
   },
   {
     path: "/login",
@@ -81,19 +81,19 @@ export const router = createBrowserRouter([
         path: "update-skill/:id",
         element: <UpdateSkill></UpdateSkill>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/update-skill/${params.id}`),
+          fetch(`https://portfolio-server-ah8e.onrender.com/update-skill/${params.id}`),
       },
       {
         path: "update-service/:id",
         element: <UpdateService></UpdateService>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/update-service/${params.id}`),
+          fetch(`https://portfolio-server-ah8e.onrender.com/update-service/${params.id}`),
       },
       {
         path: "message-detail/:id",
         element: <MessageDetail></MessageDetail>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/message-detail/${params.id}`),
+          fetch(`https://portfolio-server-ah8e.onrender.com/message-detail/${params.id}`),
       },
     ],
   },

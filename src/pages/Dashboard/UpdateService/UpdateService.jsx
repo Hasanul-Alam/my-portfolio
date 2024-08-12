@@ -9,7 +9,7 @@ const UpdateService = () => {
   const handleUpdate = (data) => {
     // console.log(data)
     axios
-      .patch(`http://localhost:5000/update-service/${_id}`, data)
+      .patch(`https://portfolio-server-ah8e.onrender.com/update-service/${_id}`, data)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           Swal.fire({

@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("https://portfolio-server-ah8e.onrender.com/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -26,7 +26,7 @@ const Services = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/service/${id}`).then((res) => {
+        axios.delete(`https://portfolio-server-ah8e.onrender.com/service/${id}`).then((res) => {
           if (res.data.deletedCount > 0) {
             Swal.fire({
               title: "Deleted!",

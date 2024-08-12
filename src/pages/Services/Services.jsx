@@ -13,7 +13,7 @@ const Services = () => {
 
   useEffect(() => {
     // Data fetching
-    fetch("http://localhost:5000/service")
+    fetch("https://portfolio-server-ah8e.onrender.com/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

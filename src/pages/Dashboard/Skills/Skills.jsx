@@ -19,7 +19,7 @@ const Skills = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/add-skill/${id}`).then((res) => {
+        axios.delete(`https://portfolio-server-ah8e.onrender.com/add-skill/${id}`).then((res) => {
           if (res.data.deletedCount > 0) {
             Swal.fire({
               title: "Deleted!",

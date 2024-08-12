@@ -13,7 +13,7 @@ const AddSkill = () => {
         text: "Progress cannot be more than 100% and less than or equal to 0%!",
       });
     } else {
-      axios.post("http://localhost:5000/add-skill", data).then((res) => {
+      axios.post("https://portfolio-server-ah8e.onrender.com/add-skill", data).then((res) => {
         if (res.data.insertedId) {
           Swal.fire("Skill added successfully");
           reset();

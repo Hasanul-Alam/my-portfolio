@@ -8,7 +8,7 @@ const MessageDetail = () => {
   const handleReadingStatus = (id) => {
     const {_id, ...doc} = message;
     const updatedDoc = {...doc, "status":"read"};
-    axios.patch(`http://localhost:5000/message/${id}`, updatedDoc)
+    axios.patch(`https://portfolio-server-ah8e.onrender.com/message/${id}`, updatedDoc)
     .then(res => {
       if(res.data.modifiedCount > 0){
         Swal.fire({

@@ -6,7 +6,7 @@ const AddService = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const handleAddService = (data) => {
-    axios.post("http://localhost:5000/add-service", data).then((res) => {
+    axios.post("https://portfolio-server-ah8e.onrender.com/add-service", data).then((res) => {
       if (res.data.insertedId) {
         Swal.fire({
           title: "Added",

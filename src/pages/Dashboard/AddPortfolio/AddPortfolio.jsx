@@ -40,7 +40,7 @@ const AddPortfolio = () => {
           img: imageLink,
         };
         const response = await axios.post(
-          `http://localhost:5000/add-portfolio`,
+          `https://portfolio-server-ah8e.onrender.com/add-portfolio`,
           portfolioData
         );
         if (response.data.insertedId) {

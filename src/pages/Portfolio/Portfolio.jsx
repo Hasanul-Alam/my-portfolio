@@ -11,7 +11,7 @@ const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/portfolio")
+    fetch("https://portfolio-server-ah8e.onrender.com/portfolio")
       .then((res) => res.json())
       .then((data) => setPortfolio(data));
   }, []);

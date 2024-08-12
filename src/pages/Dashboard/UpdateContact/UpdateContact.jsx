@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 const UpdateContact = () => {
   const { register, handleSubmit, reset } = useForm();
   const handleUpdateContact = (data) => {
-    axios.post("http://localhost:5000/contact", data).then((res) => {
+    axios.post("https://portfolio-server-ah8e.onrender.com/contact", data).then((res) => {
       if (res.data.modifiedCount > 0) {
         Swal.fire({
           title: "Updated",
