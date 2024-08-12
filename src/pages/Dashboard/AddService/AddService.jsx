@@ -19,7 +19,7 @@ const AddService = () => {
   };
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-xl rounded-lg p-8 w-[60%]">
+      <div className="bg-white shadow-xl rounded-lg p-8 w-[60%] max-md:w-[95%] max-md:p-0 max-md:bg-transparent max-md:shadow-none">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
           Add Service
         </h2>
@@ -109,7 +109,7 @@ const AddService = () => {
             type="submit"
             className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform"
           >
-            Submit
+            Add Service
           </button>
         </form>
       </div>

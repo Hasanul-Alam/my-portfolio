@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import useSkills from "../../hooks/useSkills";
 import SectionHeading from "../shared/SectionHeading/SectionHeading";
 // Sliding Library.
@@ -8,6 +9,15 @@ AOS.init();
 
 const Resume = () => {
   const [skills] = useSkills();
+
+  // AOS useEffect
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Duration of animation in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="bg-white py-10" id="resume">
       <section className="w-[75%] mx-auto max-md:w-[95%]">
@@ -21,7 +31,7 @@ const Resume = () => {
 
         {/* Main resume section */}
         <div className="grid grid-cols-2 gap-4 mt-16 text-black max-md:grid-cols-1">
-          <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+          <div data-aos="flip-left" data-aos-anchor-placement="top-center">
             {/* Summary */}
             <h3 className="text-2xl font-semibold">Summary</h3>
             <div className="border-indigo-600 border-l-4 max-md:border-0 text-gray-600 pb-1">
@@ -78,7 +88,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left" data-aos-anchor-placement="top-center">
+          <div data-aos="flip-right" data-aos-anchor-placement="top-center">
             <h3 className="text-2xl font-semibold">Projects & Portfolios</h3>
             <div className="border-indigo-600 border-l-4 max-md:border-0 pb-3 text-gray-600">
               <div className="ps-3 mt-3 leading-7">

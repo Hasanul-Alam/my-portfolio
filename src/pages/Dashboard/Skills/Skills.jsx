@@ -49,17 +49,17 @@ const Skills = () => {
                 <td className="py-2 px-4 border">{skill.name}</td>
                 <td className="py-2 px-4 border">{skill.progress}%</td>
                 <td className="py-2 px-4 border">{skill.link.slice(0, 30)}...</td>
-                <td className="py-2 px-4 border">
+                <td className="py-2 px-4 border flex gap-2 justify-center items-center">
                   <Link to={`/dashboard/update-skill/${skill._id}`}>
                     <button
-                      className="inline-block bg-green-600 p-3 mx-2 rounded-lg"
+                      className="inline-block bg-green-600 p-3 rounded-lg"
                     >
                       <CiEdit />
                     </button>
                   </Link>
                   <button
                     onClick={() => handleDelete(skill._id)}
-                    className="inline-block bg-red-600 p-3 mx-2 rounded-lg"
+                    className="inline-block bg-red-600 p-3 rounded-lg"
                   >
                     <FaRegTrashCan />
                   </button>

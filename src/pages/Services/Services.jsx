@@ -11,6 +11,15 @@ AOS.init();
 const Services = () => {
   const [services, setServices] = useState([]);
 
+  // AOS useEffect
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Duration of animation in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   useEffect(() => {
     // Data fetching
     fetch("https://portfolio-server-ah8e.onrender.com/service")
@@ -29,11 +38,7 @@ const Services = () => {
         ></SectionHeading>
 
         {/* Services Cards */}
-        <div
-          className="grid grid-cols-3 gap-4 text-center max-md:grid-cols-1"
-          data-aos="fade-left"
-          data-aos-anchor-placement="top-center"
-        >
+        <div className="grid grid-cols-3 gap-4 text-center max-md:grid-cols-1" data-aos="zoom-in">
           {services.map((service) => (
             <div
               key={service._id}

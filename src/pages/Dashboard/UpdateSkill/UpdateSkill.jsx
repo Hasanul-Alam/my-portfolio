@@ -23,9 +23,9 @@ const UpdateSkill = () => {
   return (
     <>
       <div className="min-h-screen flex items-center justify-center">
-        <div className="bg-white shadow-xl rounded-lg p-8 w-[60%]">
+        <div className="bg-white shadow-xl rounded-lg p-8 w-[60%] max-md:w-[95%] max-md:shadow-none max-md:p-0 max-md:bg-transparent">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            Add Portfolio Project
+            Update Skill
           </h2>
           <form
             onSubmit={handleSubmit(handleUpdate)}

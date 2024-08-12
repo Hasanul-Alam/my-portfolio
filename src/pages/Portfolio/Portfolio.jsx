@@ -27,7 +27,6 @@ const Portfolio = () => {
         ></SectionHeading>
         <div
           className="grid grid-cols-3 max-md:grid-cols-1 gap-4 text-center my-10"
-          data-aos="flip-up"
         >
           {portfolio.map((item) => (
             <Link key={item._id} to={`/portfolio-detail/${item._id}`}>
