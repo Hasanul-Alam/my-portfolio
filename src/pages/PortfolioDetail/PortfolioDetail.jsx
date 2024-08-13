@@ -36,20 +36,22 @@ const PortfolioDetail = () => {
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-semibold mb-4">About the Project</h2>
             <p className="text-gray-400 mb-4">{details}</p>
-            <div className="mt-6 flex">
+            <div className="mt-6 flex gap-2 max-md:justify-center">
               <a
                 target="blank"
                 href={liveLink}
-                className="bg-teal-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-teal-500 transition mr-4 hover:cursor-pointer max-md:px-5"
+                className=""
               >
-                View Live Project
+                <button className="btn btn-accent">View Live Project</button>
+                
               </a>
               <a
                 target="blank"
                 href={sourceLink}
-                className="bg-gray-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-600 transition max-md:px-5"
+                className=""
               >
-                View Source Code
+                <button className="btn btn-primary">View Source Code</button>
+                
               </a>
             </div>
           </div>
