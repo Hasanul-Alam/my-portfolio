@@ -17,7 +17,7 @@ const UpdateContact = () => {
   };
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center max-md:items-start">
         <div className="bg-white shadow-xl rounded-lg p-8 w-[60%] max-md:w-[95%] max-md:p-0 max-md:shadow-none max-md:bg-transparent">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
             Update Contact
@@ -78,7 +78,7 @@ const UpdateContact = () => {
 
             <button
               type="submit"
-              className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform"
+              className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg"
             >
               Update
             </button>

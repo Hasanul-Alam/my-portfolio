@@ -33,7 +33,7 @@ const Services = () => {
         <SectionHeading
           heading={"Services"}
           subHeading={
-            "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+            "Providing custom full-stack web solutions using the MERN stack and responsive design"
           }
         ></SectionHeading>
 
@@ -51,7 +51,7 @@ const Services = () => {
                 <h2 className="capitalize text-2xl font-semibold my-3 text-black group-hover:text-blue-600">
                   {service.name}
                 </h2>
-                <p className="text-black">{service.description}</p>
+                <p className="text-black">{service.description.slice(0, 150)}...</p>
               </div>
             </div>
           ))}

@@ -1,5 +1,3 @@
-
-
 const AboutMe = () => {
   return (
     <div className="bg-white py-10" id="about">
@@ -33,28 +31,36 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="w-[90%] max-md:w-[95%] max-md:mx-auto">
-            <p className="font-semibold text-xl my-5">Skills</p>
-              <div>
-                <p className="text-xs uppercase">html</p>
-                <progress
-                  className="progress progress-primary w-full mt-2"
-                  value="40"
-                  max="100"
-                ></progress>
-              </div>
-              <div className="my-5">
-                <p className="text-xs uppercase">css</p>
-                <progress
-                  className="progress progress-primary w-full"
-                  value="70"
-                  max="100"
-                ></progress>
-              </div>
+              <p className="font-semibold text-xl my-5">Skills</p>
               <div>
                 <p className="text-xs uppercase">javascript</p>
                 <progress
                   className="progress progress-primary w-full mt-2"
-                  value="100"
+                  value="80"
+                  max="100"
+                ></progress>
+              </div>
+              <div className="my-5">
+                <p className="text-xs uppercase">React</p>
+                <progress
+                  className="progress progress-primary w-full"
+                  value="75"
+                  max="100"
+                ></progress>
+              </div>
+              <div>
+                <p className="text-xs uppercase">mongodb</p>
+                <progress
+                  className="progress progress-primary w-full mt-2"
+                  value="90"
+                  max="100"
+                ></progress>
+              </div>
+              <div className="mt-3">
+                <p className="text-xs uppercase">node</p>
+                <progress
+                  className="progress progress-primary w-full mt-2"
+                  value="85"
                   max="100"
                 ></progress>
               </div>
@@ -66,22 +72,27 @@ const AboutMe = () => {
             </h3>
             <div className="mt-6 leading-7 text-lg text-gray-600 font-semibold">
               <p>
-                Curabitur non nulla sit amet nisl tempus convallis quis ac
-                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                at sem. Praesent sapien massa, convallis a pellentesque nec,
-                egestas non nisi. Nulla porttitor accum
+                I am a skilled MERN stack developer with a solid foundation in
+                full-stack web development. My journey in web development has
+                allowed me to build and deploy a variety of projects, each one
+                enhancing my understanding of the intricacies of modern web
+                applications.
               </p>
               <p className="my-3">
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                Vivamus suscipit tortor eget felis porttitor volutpat.
-                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                dui. porttitor at sem.
+                I specialize in creating responsive, single-page applications
+                (SPAs) using the MERN stack—MongoDB, Express.js, React, and
+                Node.js. My work is characterized by a focus on clean code,
+                efficient data management, and user-friendly interfaces.
               </p>
               <p>
-                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
-                ut lacinia in, elementum id enim. Nulla porttitor accumsan
-                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
-                pulvinar a.
+                I am passionate about continuously improving my technical skills
+                and staying updated with the latest developments in the field.
+                Although I am in the early stages of my professional career, I
+                have successfully completed some projects that demonstrate my
+                ability to turn ideas into fully functional web applications.My
+                goal is to contribute to innovative projects that push the
+                boundaries of web development while delivering exceptional user
+                experiences.
               </p>
             </div>
           </div>

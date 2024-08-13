@@ -45,7 +45,7 @@ const Messages = () => {
               <th className="py-2 px-4 border">Email</th>
               <th className="py-2 px-4 border">Message</th>
               <th className="py-2 px-4 border">Status</th>
-              <th className="py-2 px-4 border">Action</th>
+              <th className="py-2 px-4 border max-md:border-0">Action</th>
             </tr>
           </thead>
           <tbody className="text-center">
@@ -58,7 +58,7 @@ const Messages = () => {
                 </td>
                 <td className="py-2 px-4 border text-center">
                   <p
-                    className={`p-1 rounded-full text-xs w-[60%] mx-auto ${
+                    className={`p-1 rounded-full text-xs w-[60%] mx-auto max-md:w-full  ${
                       message.status === "read"
                         ? "bg-green-300"
                         : "bg-yellow-300"
@@ -67,7 +67,7 @@ const Messages = () => {
                     {message.status === 'read' ? 'Seen' : 'Unseen'}
                   </p>
                 </td>
-                <td className="py-2 px-4 border flex gap-2 justify-center items-center">
+                <td className="py-2 px-4 border flex gap-2 justify-center items-center max-md:border-b-0">
                   <Link to={`/dashboard/message-detail/${message._id}`}>
                     <button className="inline-block bg-green-600 p-3 rounded-lg">
                       <FaBookReader />

@@ -182,7 +182,7 @@ const AddPortfolio = () => {
 
           <button
             type="submit"
-            className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform"
+            className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg"
           >
             Add Portfolio
           </button>

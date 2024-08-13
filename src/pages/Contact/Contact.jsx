@@ -28,7 +28,7 @@ const Contact = () => {
         <SectionHeading
           heading={"Contact"}
           subHeading={
-            "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+            "Let's work together! Contact me for any project discussion or quaries"
           }
         ></SectionHeading>
         {/* First Section of Contact */}

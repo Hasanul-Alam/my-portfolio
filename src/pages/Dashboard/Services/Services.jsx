@@ -62,7 +62,7 @@ const Services = () => {
                 <td className="py-2 px-4 border">
                   {service.description.slice(0, 30)}...
                 </td>
-                <td className="py-2 px-4 border flex gap-2 justify-center items-center">
+                <td className="py-2 px-4 border flex gap-2 justify-center items-center max-md:border-b-0">
                   <Link to={`/dashboard/update-service/${service._id}`}>
                     <button
                       onClick={() => handleEdit(service._id)}

@@ -22,7 +22,7 @@ const Portfolio = () => {
         <SectionHeading
           heading={"Portfolio"}
           subHeading={
-            "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+            "Take a look of my work and see how I bring ideas to life"
           }
         ></SectionHeading>
         <div

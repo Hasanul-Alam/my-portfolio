@@ -25,7 +25,7 @@ const Resume = () => {
         <SectionHeading
           heading={"Resume"}
           subHeading={
-            "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+            "A detailed look at my skills, experience, and projects in full-stack web development"
           }
         ></SectionHeading>
 

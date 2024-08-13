@@ -39,7 +39,6 @@ const Skills = () => {
             <tr>
               <th className="py-2 px-4 border">Name</th>
               <th className="py-2 px-4 border">Progress</th>
-              <th className="py-2 px-4 border">Project Link</th>
               <th className="py-2 px-4 border">Action</th>
             </tr>
           </thead>
@@ -48,7 +47,6 @@ const Skills = () => {
               <tr key={skill._id}>
                 <td className="py-2 px-4 border">{skill.name}</td>
                 <td className="py-2 px-4 border">{skill.progress}%</td>
-                <td className="py-2 px-4 border">{skill.link.slice(0, 30)}...</td>
                 <td className="py-2 px-4 border flex gap-2 justify-center items-center">
                   <Link to={`/dashboard/update-skill/${skill._id}`}>
                     <button

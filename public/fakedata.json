@@ -4,42 +4,62 @@
       "price":"50",
       "duration":"14 days",
       "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam.",
-      "logo": "<FaCode />"
+      "description": "I provide Single Page Design Conversion services, transforming static design files into fully functional, responsive single-page applications. Whether you're working with PSD, Figma, or Sketch designs, I meticulously convert these into interactive web pages using modern web technologies like HTML, CSS, and JavaScript. My process ensures that the design's integrity is preserved while optimizing for performance and user experience. The result is a seamless, dynamic web page that brings your design vision to life, with a focus on clean code, accessibility, and responsive design across all devices."
     },
     {
       "name": "PSD to HTML",
       "price":"50",
       "duration":"14 days",
       "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+      "description": "I offer professional PSD to HTML conversion services, turning your static design files into pixel-perfect, responsive, and fully functional HTML web pages. With a keen eye for detail, I ensure that every element of your PSD design is accurately translated into clean, semantic HTML, CSS, and JavaScript code. My approach guarantees that your website is not only visually consistent with the original design but also optimized for performance, accessibility, and cross-browser compatibility. Whether it's a single page or a complex multi-page layout, I deliver high-quality, W3C-compliant code that lays a solid foundation for your website."
     },
     {
       "name": "Figma to HTML",
       "price":"50",
       "duration":"14 days",
       "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+      "description": "I provide expert Figma to HTML conversion services, transforming your Figma designs into fully responsive, high-quality HTML web pages. By meticulously translating every detail from Figma into clean, well-structured HTML, CSS, and JavaScript, I ensure that your design is faithfully represented in the final web page. My process focuses on maintaining design accuracy while optimizing for performance, cross-browser compatibility, and responsiveness across all devices. Whether it's a simple landing page or a complex web interface, I deliver pixel-perfect results that bring your Figma designs to life on the web."
     },
     {
-      "name": "Single Page React Application",
+      "name": "Single Page Application Development",
       "price":"50",
       "duration":"14 days",
       "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
-    },
-    {
-      "name": "React Native for Mobile Apps",
-      "price":"50",
-      "duration":"14 days",
-      "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+      "description": "I specialize in Single Page Application (SPA) development, crafting fast, responsive, and dynamic web applications that provide a seamless user experience. SPAs are designed to load a single HTML page and dynamically update content as users interact with the app, eliminating the need for full page reloads and enhancing performance. Using modern frameworks like React, I build SPAs that are not only efficient but also highly interactive, delivering a smooth and engaging experience for users. My focus is on creating SPAs that are scalable, maintainable, and optimized for performance, ensuring your web application meets the highest standards of functionality and user satisfaction."
     },
     {
       "name": "React Native for Mobile Apps",
       "price":"50",
       "duration":"14 days",
       "reviews":"10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, aperiam."
+      "description": "Mobile app development using React Native allows for the creation of high-performance, cross-platform applications with a single codebase. React Native leverages the power of JavaScript and React to build apps that run smoothly on both iOS and Android, providing a native-like experience for users. This approach not only speeds up development time but also ensures consistent functionality and design across platforms. By using React Native, developers can create mobile apps that are responsive, intuitive, and tailored to meet the specific needs of their audience, all while maintaining the efficiency and flexibility of a unified development process."
+    },
+    {
+      "name": "API Development & Integration",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
+      "description": "I provide comprehensive API development and integration services to enhance your application's functionality and connectivity. Whether you need to create custom RESTful APIs from scratch or integrate existing third-party APIs, I ensure seamless communication between your application's frontend and backend systems."
+    },
+    {
+      "name": "Database Design & Management",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
+      "description": "I create well-structured database schemas tailored to your application’s requirements, focusing on efficient data modeling and schema design. This includes defining collections, designing document structures, and optimizing data relationships to enhance query performance and scalability."
+    },
+    {
+      "name": "Security Enhancements",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
+      "description": "I provide specialized security enhancement services for React applications to ensure that your web application is protected against potential threats and vulnerabilities. Security is a crucial aspect of modern web development, and my approach focuses on implementing best practices to safeguard your application and its users."
+    },
+    {
+      "name": "Responsive Design Implementation",
+      "price":"50",
+      "duration":"14 days",
+      "reviews":"10",
+      "description": "I offer responsive design implementation services to ensure your web application delivers a consistent and engaging user experience across all devices and screen sizes. With the rise of mobile and tablet usage, having a website that adapts seamlessly to different devices is crucial for user satisfaction and accessibility."
     }
   ]

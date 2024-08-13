@@ -22,7 +22,7 @@ const UpdateSkill = () => {
   };
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center max-md:items-start">
         <div className="bg-white shadow-xl rounded-lg p-8 w-[60%] max-md:w-[95%] max-md:shadow-none max-md:p-0 max-md:bg-transparent">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
             Update Skill
@@ -31,7 +31,7 @@ const UpdateSkill = () => {
             onSubmit={handleSubmit(handleUpdate)}
             className="space-y-6"
           >
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-md:block">
               <div className="w-full">
                 <label
                   className="block text-gray-700 font-semibold mb-2"
@@ -49,7 +49,7 @@ const UpdateSkill = () => {
                   placeholder="Enter Project Name"
                 />
               </div>
-              <div className="w-full">
+              <div className="w-full max-md:mt-5">
                 <label
                   className="block text-gray-700 font-semibold mb-2"
                   htmlFor="progress"
@@ -89,7 +89,7 @@ const UpdateSkill = () => {
 
             <button
               type="submit"
-              className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform"
+              className="w-full text-black bg-blue-400 font-semibold py-2 px-4 rounded-lg shadow-lg"
             >
               Update Skill
             </button>
