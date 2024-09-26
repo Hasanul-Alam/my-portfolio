@@ -7,7 +7,7 @@ const AboutMe = () => {
             <div className="grid grid-cols-2 gap-2 max-md:grid-cols-1">
               <div className="">
                 <img
-                  src="https://i.ibb.co/mHVYvWm/IMG-20240814-195334-01.jpg"
+                  src="https://i.ibb.co.com/PYgMtcc/IMG20240915152138.jpg"
                   alt="Profile Image"
                 />
               </div>
