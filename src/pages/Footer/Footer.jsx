@@ -16,7 +16,7 @@ const Footer = () => {
             <FiGithub />
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/hasanul-alam/" target="blank" className="">
+        <a href="https://www.linkedin.com/in/hasanul-alam2" target="blank" className="">
           <div className="text-xl text-black hover:text-white p-3 hover:bg-blue-500 rounded-full border border-blue-500">
             <FaLinkedinIn />
           </div>

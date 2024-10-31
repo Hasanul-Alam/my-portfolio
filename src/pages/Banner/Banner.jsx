@@ -22,7 +22,7 @@ const Banner = () => {
                   backSpeed={50}
                   strings={[
                     "Web Developer",
-                    "Web Designer",
+                    "Mobile App Developer",
                     "Freelancer",
                   ]}
                   typeSpeed={50}

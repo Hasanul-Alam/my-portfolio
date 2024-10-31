@@ -1,9 +1,9 @@
 const AboutMe = () => {
   return (
     <div className="bg-white py-10" id="about">
-      <section className="w-[75%] mx-auto shadow-2xl p-10 max-md:shadow-none max-md:p-0 max-md:w-[90%]">
-        <div className="grid grid-cols-2 gap-4 bg-white text-black max-md:grid-cols-1 gap-0">
-          <div>
+      <section className="w-[85%] mx-auto shadow-2xl p-10 max-md:shadow-none max-md:p-0 max-md:w-[95%]">
+        <div className="grid grid-cols-3 gap-4 bg-white text-black max-lg:grid-cols-1 gap-0">
+          <div className="col-span-2">
             <div className="grid grid-cols-2 gap-2 max-md:grid-cols-1">
               <div className="">
                 <img
@@ -20,9 +20,9 @@ const AboutMe = () => {
                   <span className="text-gray-800 font-semibold">Profile: </span>
                   Front End Developer
                 </p>
-                <p>
+                <p className="">
                   <span className="text-gray-800 font-semibold">Email: </span>
-                  hasanul.alam.professional@gmail.com
+                  <span>hasanul.alam.professional@gmail.com</span>
                 </p>
                 <p>
                   <span className="text-gray-800 font-semibold">Phone: </span>
