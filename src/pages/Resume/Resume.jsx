@@ -40,13 +40,15 @@ const Resume = () => {
                   Hasanul Alam
                 </h4>
                 <p className="leading-7">
-                  Innovative and deadline-driven Graphic Designer with 3+ years
-                  of experience designing and developing user-centered
-                  digital/print marketing material from initial concept to
-                  final, polished deliverable.
+                  Full Stack Web Developer and React Native Mobile App Developer
+                  with expertise in the MERN stack and cross-platform mobile app
+                  development. Skilled in building responsive, user-centric
+                  applications using technologies like React, Node.js, Firebase,
+                  and Tailwind CSS. Passionate about delivering clean, scalable
+                  code and solving complex technical challenges.
                 </p>
                 <ul className="list-disc ps-5 mt-3 leading-8">
-                  <li>Bashar Road, Rajshahi</li>
+                  <li>Molla Bari, Palsha, Chapai Nawabganj Sadar, Rajshahi</li>
                   <li>+8801797888924</li>
                   <li>hasanul.alam.professional@gmaill.com</li>
                 </ul>
@@ -170,7 +172,7 @@ const Resume = () => {
         </div>
         <div className="w-full mx-auto text-center mt-10">
           <a
-            href="https://drive.google.com/file/d/1ziBx2WwJZ8ypEun5pNhwIy-Fk1CHaLHr/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Jorf9qXd0SbpqyjR47x67n9aOv5VIJ22/view?usp=sharing"
             target="blank"
           >
             <button className="btn btn-primary">View Full Resume</button>
